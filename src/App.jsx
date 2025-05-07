@@ -1,6 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from "./components/Navbar"
+import Navbar from "./components/NavBar";
 
 const App = () => {
   
@@ -9,10 +11,6 @@ const App = () => {
   return (
     <Router>
       <div>
-        
-        <div>
-          <h1>Movie Explorer</h1>
-        </div>
 
         <Navbar />
 

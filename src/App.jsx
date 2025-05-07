@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from "./components/Navbar"
 
 const App = () => {
   
@@ -13,10 +14,7 @@ const App = () => {
           <h1>Movie Explorer</h1>
         </div>
 
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/movies">Movies</Link>
-        </nav>
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<h2>Home</h2>} />

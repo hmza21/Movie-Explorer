@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const App = () => {
   
@@ -12,12 +13,14 @@ const App = () => {
     <Router>
       <div>
 
-        <Navbar />
+        <NavBar />
 
         <Routes>
-          <Route path="/" element={<h2>Home</h2>} />
+          <Route path="/" element={<h2>Welcome to Movie Explorer!</h2>} />
           <Route path="/movies" element={<h2>Movies</h2>} />
         </Routes>
+      
+        <Footer />
 
       </div>
     </Router>
